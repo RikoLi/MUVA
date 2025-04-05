@@ -1,3 +1,3 @@
-# Multi-grained Vision-Language Alignment via Adaptively Masked Attention for Generalizable Person Re-Identification
+# Multi-grained Vision-Language Alignment for Domain Generalized Person Re-Identification
 
 comming soon
