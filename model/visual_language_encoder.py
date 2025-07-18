@@ -116,7 +116,7 @@ class MultiGrainedTextEncoder(nn.Module):
         return x
 
 
-class ViLaMDGroundingMask(nn.Module):
+class MUVA(nn.Module):
     def __init__(self, cfg, num_classes, cam_num, view_num) -> None:
         super().__init__()
         self.cfg = cfg
@@ -431,6 +431,6 @@ class ViLaMDGroundingMask(nn.Module):
             nn.init.constant_(m.bias, 0.0)
             m.bias.requires_grad_(False)
             
-def make_vilamd_grounding_mask(cfg, num_classes, cam_num, view_num):
-    model = ViLaMDGroundingMask(cfg, num_classes, cam_num, view_num)
+def make_muva(cfg, num_classes, cam_num, view_num):
+    model = MUVA(cfg, num_classes, cam_num, view_num)
     return model

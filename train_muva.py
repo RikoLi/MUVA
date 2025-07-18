@@ -5,9 +5,9 @@ import numpy as np
 import os
 import sys
 import argparse
-from configs import cfg_grounding_mask as cfg
+from configs import cfg as cfg
 from engine.coop_trainers import train_coop_stage1_memory, train_coop_stage2_memory
-from model.visual_language_encoder import make_vilamd_grounding_mask
+from model.visual_language_encoder import make_muva
 from engine.datasets.dataloader import make_coop_dataloader, make_val_dataloader
 from engine.solvers.optimizers import make_optimizer_coop_1stage, make_optimizer_coop_2stage, make_optimizer_warmup
 from engine.solvers.schedulers import WarmupMultiStepLR, create_cosine_scheduler
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         val_loader, num_queries = make_val_dataloader(cfg)
     
     # Create models
-    model = make_vilamd_grounding_mask(cfg, num_classes, cam_num, view_num)
+    model = make_muva(cfg, num_classes, cam_num, view_num)
     num_params = model.get_param_num()
     logger.info(colored(f'Number of parameters in the model: {num_params / 1e6:.1f}M', 'green'))
            

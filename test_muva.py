@@ -5,10 +5,10 @@ import numpy as np
 import os
 import argparse
 import tqdm
-from configs import cfg_grounding_mask as cfg
+from configs import cfg as cfg
 from utils.metrics import R1_mAP_eval
 from utils.perf_monitor import Timer
-from model.visual_language_encoder import make_vilamd_grounding_mask
+from model.visual_language_encoder import make_muva
 from engine.datasets.dataloader import make_coop_dataloader, make_val_dataloader
 from termcolor import colored
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
         val_loader, num_queries = make_val_dataloader(cfg)
     
     # Create models
-    model = make_vilamd_grounding_mask(cfg, num_classes, cam_num, view_num)
+    model = make_muva(cfg, num_classes, cam_num, view_num)
     model.load_param_inference(cfg.TEST.WEIGHT)
     num_params = model.get_param_num()
     logger.info(colored(f'Number of parameters in the model: {num_params / 1e6:.1f}M', 'green'))
