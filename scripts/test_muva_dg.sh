@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=$1 python test_muva.py --config_file ${2}/running_config.yml TEST.WEIGHT ${2}/ViT-B-16_stage2_60.pth DATASETS.EVAL_DATASET ${3} OUTPUT_DIR logs/test
