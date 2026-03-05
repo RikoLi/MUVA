@@ -1,9 +1,9 @@
-# Multi-Grained Vision-Language Alignment for Domain Generalized Person Re-Identification
+# Multi-Grained Vision-Language Alignment for Domain Generalised Person Re-Identification
 
 ![Static Badge](https://img.shields.io/badge/Python-3.10.16-blue)
 ![Static Badge](https://img.shields.io/badge/PyTorch-2.6.0-orange)
 
-Official implementation code of paper [Multi-Grained Vision-Language Alignment for Domain Generalized Person Re-Identification](https://doi.org/10.1049/cvi2.70062).
+Official implementation code of paper [Multi-Grained Vision-Language Alignment for Domain Generalised Person Re-Identification](https://doi.org/10.1049/cvi2.70062).
 
 ## Prerequisites
 ### Installation
