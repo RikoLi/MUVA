@@ -3,7 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/Python-3.10.16-blue)
 ![Static Badge](https://img.shields.io/badge/PyTorch-2.6.0-orange)
 
-Official implementation code of paper [Multi-Grained Vision-Language Alignment for Domain Generalized Person Re-Identification](TODO).
+Official implementation code of paper [Multi-Grained Vision-Language Alignment for Domain Generalized Person Re-Identification](https://doi.org/10.1049/cvi2.70062).
 
 ## Prerequisites
 ### Installation
@@ -60,4 +60,17 @@ We would like to highly appreciate the nice works of [CogVLM](https://github.com
 
 ## Citation
 
-TODO
+Feel free to cite our work if you find it is helpful to your study:
+
+```bib
+@article{MUVA,
+  author = {Li, Jiachen and Gong, Xiaojin and Zhang, Dongping},
+  title = {Multi-Grained Vision–Language Alignment for Domain Generalised Person Re-Identification},
+  journal = {IET Computer Vision},
+  volume = {20},
+  number = {1},
+  pages = {e70062},
+  doi = {https://doi.org/10.1049/cvi2.70062},
+  year = {2026}
+}
+```
