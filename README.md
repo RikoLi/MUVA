@@ -3,7 +3,12 @@
 ![Static Badge](https://img.shields.io/badge/Python-3.10.16-blue)
 ![Static Badge](https://img.shields.io/badge/PyTorch-2.6.0-orange)
 
-Official implementation code of paper [Multi-Grained Vision-Language Alignment for Domain Generalised Person Re-Identification](https://doi.org/10.1049/cvi2.70062).
+Official implementation code of paper Multi-Grained Vision-Language Alignment for Domain Generalised Person Re-Identification (MUVA).
+
+Original paper: [here](https://doi.org/10.1049/cvi2.70062)
+arXiv version: [here](https://arxiv.org/pdf/2603.14012)
+
+![pipeline](/assets/pipeline.jpg)
 
 ## Prerequisites
 ### Installation
@@ -55,6 +60,14 @@ Run following script to evaluate on given target domain dataset.
 # e.g. evaluate on GPU:0, checkpoint is at logs/ma2ms_full-model, target domain is DukeMTMC-reID
 ./scripts/test_muva_dg.sh 0 logs/ma2ms_full-model dukemtmc
 ```
+
+# Performance
+
+![ssdg1](/assets/perf_ssdg1.jpg)
+
+![ssdg2](/assets/perf_ssdg2.jpg)
+
+![msdg](/assets/perf_msdg.jpg)
 
 ## Acknowledgement
 
