@@ -6,6 +6,7 @@
 Official implementation code of paper Multi-Grained Vision-Language Alignment for Domain Generalised Person Re-Identification (MUVA).
 
 Original paper: [here](https://doi.org/10.1049/cvi2.70062)
+
 arXiv version: [here](https://arxiv.org/pdf/2603.14012)
 
 ![pipeline](/assets/pipeline.jpg)
